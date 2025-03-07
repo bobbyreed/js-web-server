@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
-// Middleware to parse JSON bodies
+// Serve files from the 'public' folder
+app.use(express.static('public'));
+
 app.use(express.json());
 
 // Middleware to log all requests
@@ -11,17 +13,12 @@ app.use((req, res, next) => {
   next();
 });
 
-// Home route
-app.get('/', (req, res) => {
-  res.send('Welcome to the Home Page');
-});
-
 // About route
 app.get('/about', (req, res) => {
   res.send('About Us: We are learning to build web servers!');
 });
 
-// API routes
+// API routess
 app.get('/api/users', (req, res) => {
   res.json({
     users: [
@@ -31,13 +28,20 @@ app.get('/api/users', (req, res) => {
   });
 });
 
-// POST route
+// POST routes
 app.post('/api/data', (req, res) => {
   res.status(201).json({
     message: 'Data received successfully',
     data: req.body
   });
 });
+
+//GET routes
+app.get('/api/products', (req,res) => {
+    res.status(200).json({
+        
+    })
+})
 
 // Rute with URL parameters
 app.get('/api/users/:id', (req, res) => {
