@@ -22,8 +22,10 @@ app.get('/about', (req, res) => {
 app.get('/api/users', (req, res) => {
   res.json({
     users: [
-      { id: 1, name: 'Alice' },
-      { id: 2, name: 'Bob' }
+      { id: 0, name: 'Tashfeen' },
+      { id: 1, name: 'Reed' },
+      { id: 2, name: 'Maxwell' },
+      { id: 3, name: 'Anga' }
     ]
   });
 });
@@ -37,10 +39,10 @@ app.post('/api/data', (req, res) => {
 });
 
 //GET routes
-app.get('/api/products', (req,res) => {
-    res.status(200).json({
-        
-    })
+app.get('/api/products', (req, res) => {
+  res.status(200).json({
+
+  })
 })
 
 // Rute with URL parameters
