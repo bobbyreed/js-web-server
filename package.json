@@ -9,6 +9,6 @@
     "express": "^4.21.2"
   },
   "scripts": {
-    "build": "webpack --mode production --base=/js-web-server/"
+    "build": "webpack --mode production"
   }
 }
