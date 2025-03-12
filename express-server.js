@@ -1,10 +1,4 @@
 /**
- * EXPRESS SERVER BASIC IMPLEMENTATION
- * This file creates a complete web server using Express.js, a popular Node.js framework
- * that simplifies the process of building web applications and APIs.
- */
-
-/**
  * Import the Express.js framework
  * Q: What is Express.js and why use it instead of plain Node.js?
  * A: Express is a minimal, flexible Node.js web application framework that provides
