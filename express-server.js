@@ -5,6 +5,7 @@ const port = 3001;
 // Serve files from the 'public' folder
 app.use(express.static('public'));
 
+// Serve files from the JSON (Check 'main' if it isn't pointing where you like)
 app.use(express.json());
 
 // Middleware to log all requests
